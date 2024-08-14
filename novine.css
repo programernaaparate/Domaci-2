@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=PT+Serif&display=swap");
+
+html {
+  background-color: #f9f7f1;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  color: #404040;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.time {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+time {
+  background-color: rgb(191, 188, 188);
+  color: black;
+  font-size: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+  margin-bottom: 2px;
+}
+
+.gridov-div {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridov-div div:nth-child(3n + 1) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.gridov-div div:nth-child(3n + 3) {
+  padding-right: 0;
+}
+
+.gridov-div div {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.druga-kolona {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.prva-kolona {
+  grid-column: 1;
+  align-self: end; /*na kraj vertikala*/
+}
+
+.druga-kolona {
+  grid-column: 2;
+}
+
+.treca-kolona {
+  grid-column: 3;
+}
+
+blockquote h2 {
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+  text-transform: lowercase;
+}
+blockquote h2::first-letter {
+  text-transform: uppercase;
+}
+
+.drugi-red {
+  grid-column: 1/-1;
+}
+
+img {
+  width: 150px;
+}
+
+.za-float {
+  display: flex;
+  justify-content: space-between;
+}
+
+.treci-red-druga {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 13px;
+}
+
+li::before {
+  content: "☕";
+  margin-right: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.grid-column {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.gridov-div .prva-kolona .author {
+  padding-left: 0;
+}
+p {
+  margin: 0;
+}
+.gridov-div .treci-red-treca .prvipar {
+  padding-bottom: 45px;
+  padding-left: 22px;
+}
+.gridov-div .treci-red-treca .drugipar {
+  padding-left: 20px;
+}
+
+.za-float {
+  float: left;
+}
